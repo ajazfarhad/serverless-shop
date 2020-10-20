@@ -1,0 +1,43 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Create Product Schema",
+  "required": [
+    "PK",
+    "SK",
+    "title"
+  ],
+  "properties": {
+    "PK": {
+      "type": "string"
+    },
+    "SK": {
+      "type": "string"
+    },
+    "acidity": {
+      "type": "string"
+    },
+    "grind_size": {
+      "type": "string"
+    },
+    "hints_of": {
+      "type": "string"
+    },
+    "information": {
+      "type": "string"
+    },
+    "process": {
+      "type": "string"
+    },
+    "roast": {
+      "type": "string"
+    },
+    "sweetness": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

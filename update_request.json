@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Update Product Schema",
+  "type": "object",
+  "properties": {
+    "acidity": {
+      "type": "string"
+    },
+    "grind_size": {
+      "type": "string"
+    },
+    "hints_of": {
+      "type": "string"
+    },
+    "information": {
+      "type": "string"
+    },
+    "process": {
+      "type": "string"
+    },
+    "roast": {
+      "type": "string"
+    },
+    "sweetness": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
