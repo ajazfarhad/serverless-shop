@@ -9,7 +9,7 @@ provider:
   stage: ${opt:stage, 'dev'}
   region: eu-west-2
   environment:
-    DYNAMODB_TABLE: ProductsTable
+    DYNAMODB_TABLE: Products
   iamRoleStatements:
     - Effect: Allow
       Action:
