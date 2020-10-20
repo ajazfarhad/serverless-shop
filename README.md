@@ -1,14 +1,18 @@
 # serverless-shop
-----
+
 Example e-commerce shop API. Built using AWS tools and Serverless framework
 
 ### **Setup & Deployment**
 run the following command to deploy the stack
+
 `sls deploy --aws-profile profile-name`
 or
 `sls deploy`
+
 without profile name it will use the default profile
+
 **for removing the entire stack run the following command**
+
 `sls remove --aws-profile profile-name`
 or
 `sls remove`
