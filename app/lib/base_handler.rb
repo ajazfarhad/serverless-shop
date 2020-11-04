@@ -7,53 +7,25 @@ require 'aws-sdk-dynamodb'
 class BaseHandler
   REGION = 'eu-west-2'
   TABLE_NAME = 'Products'
+  AVAILABLE_ACTIONS = { show: 'get', create: 'put', delete: 'delete', update: 'update' }.freeze
 
   def initialize(**options)
     @event = options[:event]
-    @action = options[:action]
-  end
-
-  def call
-    call_action(action)
   end
 
   def event_struct
     OpenStruct.new(event)
   end
 
-  attr_reader :event, :action
+  attr_reader :event
 
   def client
     @client ||= Aws::DynamoDB::Client.new(region: REGION)
   end
 
-  def get_item
-    client.get_item(params)
-  end
-
-  def create_item
-    client.put_item(params)
-  end
-
-  def delete_item
-    client.delete_item(params)
-  end
-
-  def update_item
-    client.update_item(params)
-  end
-
-  def call_action(action)
-    case action
-    when :show
-      get_item
-    when :create
-      create_item
-    when :update
-      update_item
-    when :delete
-      delete_item
-    end
+  def method_missing(method)
+    super unless AVAILABLE_ACTIONS.keys.include?(method)
+    client.send("#{AVAILABLE_ACTIONS[method]}_item", params)
   end
 
   def params

@@ -33,6 +33,9 @@ functions:
               paths:
                 pk: true
                 sk: true
+          response:
+            headers:
+              Content-Type: "'application/json'"
   create-product:
     handler: app/handlers/create_product.CreateProduct.handler
     description: "Handles logic for creating a product resource"
