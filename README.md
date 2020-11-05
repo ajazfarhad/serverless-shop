@@ -2,6 +2,11 @@
 
 Example e-commerce shop API. Built using AWS tools and Serverless framework
 
+
+### High level diagram of the architecture:
+![architecture][architecture.png]
+
+
 ### **Setup & Deployment**
 run the following command to deploy the stack
 
