@@ -3,8 +3,8 @@
 Example e-commerce shop API. Built using AWS tools and Serverless framework
 
 
-High level diagram of the architecture:
-![][architecture.png]
+### High level diagram of the architecture:
+![architecture][architecture]
 
 
 ### **Setup & Deployment**
@@ -82,4 +82,4 @@ or
 `true`
 
 
-
+[architecture]: https://github.com/ajazfarhad/serverless-shop/raw/master/architecture.png "Architecture"
