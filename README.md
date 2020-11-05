@@ -3,8 +3,8 @@
 Example e-commerce shop API. Built using AWS tools and Serverless framework
 
 
-### High level diagram of the architecture:
-![architecture][https://github.com/ajazfarhad/serverless-shop/blob/master/architecture.png]
+High level diagram of the architecture:
+![][architecture.png]
 
 
 ### **Setup & Deployment**
