@@ -37,20 +37,8 @@ or
 * **Response:**
   * **Code:** 200
     **body:**
-``` json
-{
-    "process": "Washed",
-    "hints_of": "Dark chocolate",
-    "information": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "acidity": "Grape",
-    "grind_size": "Fine",
-    "SK": "#METADATA#e9357316-c1ce-45b7-936d-947f8243583f",
-    "roast": "Dark Espresso",
-    "PK": "PROD#e9357316-c1ce-45b7-936d-947f8243583f",
-    "sweetness": "Fruity",
-    "title": "Ristretto"
-}
-```
+    ![response][response]
+
 * **API Key Required:**
 `false`
 
@@ -83,3 +71,5 @@ or
 
 
 [architecture]: https://github.com/ajazfarhad/serverless-shop/raw/master/architecture.png "Architecture"
+
+[response]: https://github.com/ajazfarhad/serverless-shop/raw/master/response.png "Response"
